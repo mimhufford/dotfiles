@@ -5,10 +5,12 @@ if has('syntax') && !exists('g:syntax_on')
   syntax enable
 endif
 
+set number
 set autoindent
 set backspace=indent,eol,start
 set complete-=i
 set smarttab
+set ignorecase
 
 set nrformats-=octal
 
