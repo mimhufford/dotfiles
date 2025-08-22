@@ -55,7 +55,7 @@ vim.api.nvim_create_autocmd("FocusLost", { pattern = "*", command = "wa" })  -- 
 --  Compile and run for current project --
 ------------------------------------------
 vim.opt.makeprg = "~/jai/bin/jai-linux game.jai +Autorun"
-vim.opt.errorformat = "%f:%l\\,%c: Error: %m"
+vim.opt.errorformat = "%f:%l\\,%c: Error: %m,%f:%l\\,%c: Warning: %m"
 vim.keymap.set("n", "<leader><leader>", "<cmd>wa<CR><cmd>make<CR>")
 
 
